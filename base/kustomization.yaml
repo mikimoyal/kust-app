@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: wasliberty
+namePrefix: kustomtest-
+nameSuffix: -v2
+resources:
+- deployment.yaml
+- service.yaml
+- pvc.yaml
+- configmap.yaml
+- secret.yaml
+labels:
+- includeSelectors: true
+  pairs:
+    app: kustomized-wasliberty

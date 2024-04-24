@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wasliberty
+  labels:
+    app: wasliberty
+    group: group-prod
+data:
+  VERSION: "2.0-prod"
+  LANGUAGE: en
+  url: "wasliberty-prod.com"

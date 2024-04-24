@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wasliberty
+  labels:
+    app: wasliberty
+    group: group-staging
+data:
+  VERSION: "2.0-staging"
+  LANGUAGE: en
+  url: "wasliberty-staging.com"
